@@ -1,0 +1,33 @@
+type Mutation {
+  insertMeliLead(input: MeliInput!): LeadResponse
+  insertWhatsappLead(input: WhatsappInput!): LeadResponse
+}
+
+type Query {
+  _empty: String
+}
+
+input MeliInput {
+  dni: String!
+  name: String!
+  phone: Int!
+  branch: String!
+  email: String!
+}
+
+input WhatsappInput {
+  nombre: String!
+  celular: String!
+  sucursal: String!
+  correo: String!
+}
+
+type LeadResponse {
+  status: String!
+  data: LeadData!
+}
+
+type LeadData {
+  id: String!
+  name: String!
+}

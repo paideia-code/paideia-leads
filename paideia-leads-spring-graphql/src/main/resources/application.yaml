@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: leads-graphql
+  graphql:
+    graphiql:
+      enabled: true
+      path: /leads
+server:
+  port: 8080
