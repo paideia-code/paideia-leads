@@ -4,7 +4,7 @@ type Mutation {
 }
 
 type Query {
-  _empty: String
+  getAllLeads: [LeadData!]!
 }
 
 input MeliInput {

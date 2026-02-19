@@ -5,5 +5,12 @@ spring:
     graphiql:
       enabled: true
       path: /leads
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
 server:
   port: 8080
